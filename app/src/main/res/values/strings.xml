@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EarthQuake</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quake_feed">http://earthquake.usgs.gov/eqcenter/catalogs/lday-M2.5.xml</string>
+</resources>
