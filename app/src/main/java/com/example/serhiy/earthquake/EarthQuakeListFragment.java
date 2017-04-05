@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.widget.ArrayAdapter;
 
+import java.net.URL;
 import java.util.ArrayList;
 
 
@@ -32,6 +33,11 @@ public class EarthQuakeListFragment extends ListFragment {
 
     public EarthQuakeListFragment() {
         // Required empty public constructor
+    }
+
+    public void refreshEarthQuakes(){
+        //Get a XML
+        URL url;
     }
 
 }
