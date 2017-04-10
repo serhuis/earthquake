@@ -146,7 +146,10 @@ public class EarthQuakeListFragment extends ListFragment {
     }
 
     private void addNewQuake(Quake _quake) {
-        earthquakes.add(_quake);
+        Earthquake earthquakeActivity = (Earthquake)getActivity();
+        if(_quake.getMagnitude() > earthquakeActivity.minMagnitude) {
+            earthquakes.add(_quake);
+        }
         aa.notifyDataSetChanged();
     }
 }

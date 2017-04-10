@@ -53,6 +53,15 @@ public class PreferencesActivity extends Activity {
                                        }
                                    }
         );
+
+        Button cancelButton = (Button)findViewById(R.id.canselButton);
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PreferencesActivity.this.setResult(RESULT_CANCELED);
+                finish();
+            }
+        });
     }
     private void savePreferences(){
         int updateIndex = updateFrequencySPinner.getSelectedItemPosition();
